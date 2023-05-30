@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contac Us</title>
+  </head>
+  <body>
+    <!-- Section n0 Nav-bar  -->
+    <nav>
+      <div>
+        <object
+          data="./resources/images/logos/circle.svg"
+          type="image/svg+xml"
+        ></object>
+      </div>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+      <button type="button">Contac us</button>
+    </nav>
+    <!-- section n1 Form -->
+    <h1>Contact Us</h1>
+    <section class="container">
+      <form id="myForm">
+        <div id="msg"></div>
+        <div>
+          <label class="name" for="formName">Full name:</label><br />
+          <input
+            type="text"
+            id="formName"
+            name="formName"
+            placeholder="Enter your full name"/>
+        </div>
+        <div>
+          <label class="email" for="email">Email:</label><br />
+          <input type="email" id="email" name="email" 
+          placeholder="Enter your email address  "/>
+        </div>
+        <div>
+          <label class="numberPhone" for="phone">Phone number:</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{3}" />
+        </div>
+        <div>
+          <span>Message *</span>
+          <textarea name="message" rows="10" cols="30">
+          Write your message here...
+       </textarea>
+       <input class="btn" type="submit" value="Submit" />
+        </div>
+      </form>
+    </section>
+    <!-- section n2 footer -->
+    <footer>
+      <object
+        data="./resources/images/logos/circle.svg"
+        type="image/svg+xml"
+      ></object>
+      <p>Barcelona. Spain, 08029</p>
+      <ul>
+        <li><a href=""></a>Team</li>
+        <li><a href=""></a>Services</li>
+        <li><a href=""></a>About Us</li>
+        <li><a href=""></a>Press</li>
+        <li><a href=""></a>Proyects</li>
+        <li><a href=""></a>Privacy policy</li>
+      </ul>
+    </footer>
+    <script src="./resources/js/contact.js"></script>
+  </body>
+</html>
+
