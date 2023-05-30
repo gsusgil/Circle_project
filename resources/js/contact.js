@@ -37,7 +37,7 @@ const response = await fetch(url, {
       }),
     });
  
-    
+     
     // 3era ITERACION  Se utiliza setTimeout para agregar un delay de 2 seg para emular la llamada a un servidor.
 try {
     //  await new Promise((resolve) => setTimeout(resolve, 2000));
