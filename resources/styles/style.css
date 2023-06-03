@@ -20,6 +20,10 @@ footer {
   margin: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   display: block;
@@ -285,27 +289,25 @@ body {
 /* ------------------------------ Recent projects ------------------------------ */
 #projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
-  justify-items: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 20px;
-  /* max-width: 1063px;
-  margin: auto; */
+  justify-content: space-around;
 }
 
 #projects > h2 {
   margin: 100px 0 75px 0;
 }
 #cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-items: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.cards {
   background-color: white;
   padding-bottom: 20px;
-  display: flex;
-  justify-content: space-around;
 }
-
 .cards img {
   width: 100%;
   height: 240px;
@@ -437,8 +439,8 @@ body {
 }
 /* ------------------------------ Services ------------------------------ */
 #services {
-  margin-top: 150px;
-  text-align: left;
+  display: grid;
+  justify-content: space-around;
 }
 
 #services h2 {
@@ -454,16 +456,15 @@ body {
 .services-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 25px;
-  grid-row-gap: 0;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-items: center;
+  margin: 0 auto;
 }
-
 .services-card {
+  background-color: white;
   padding-bottom: 20px;
-  background-color: #f3f9fe;
 }
-
 #services-card1 {
   background-image: url("../images/services-section/icons/1.svg");
   background-size: 46%;
@@ -475,7 +476,6 @@ body {
   border-radius: 100px;
   margin: 34px 0 0 34px;
 }
-
 #services-card2 {
   background-image: url("../images/services-section/icons/2.svg");
   background-size: 46%;
@@ -487,7 +487,6 @@ body {
   border-radius: 100px;
   margin: 34px 0 0 34px;
 }
-
 #services-card3 {
   background-image: url("../images/services-section/icons/3.svg");
   background-size: 46%;
@@ -500,23 +499,20 @@ body {
   margin: 34px 0 0 34px;
 }
 
-.service-class h4 {
-  font-weight: bold;
-  margin-left: 40px;
+.services-card h3 {
+  font-size: 1.3rem;
+  margin: 27px;
 }
-
-.service-class p {
+.services-card p {
   font-size: 1.1rem;
   margin: 0 27px 27px 27px;
-  margin-left: 40px;
 }
 
-.service-class a {
+.services-card a {
   text-decoration: none;
-  margin: 0 27px 27px 27px;
-  font-weight: bold;
+  font-weight: 500;
   color: #072ac8;
-  margin-left: 40px;
+  margin: 0 27px 27px 27px;
 }
 
 .service-class a:hover {
@@ -664,7 +660,6 @@ footer {
 }
 
 #form-container {
-
 }
 
 #form-container form {
@@ -698,14 +693,14 @@ footer {
 }
 
 .message #msg {
-    border: 0;
-    background-color: rgba(107, 112, 141, 0.1);
-    height: 200px;
-    font-weight: 400;
-    font-size: 1.1rem;
-    padding-top: 7px;
-    padding-left: 15px;
-    margin-bottom: 24px;
+  border: 0;
+  background-color: rgba(107, 112, 141, 0.1);
+  height: 200px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-top: 7px;
+  padding-left: 15px;
+  margin-bottom: 24px;
 }
 
 .submit {
@@ -734,7 +729,7 @@ footer {
   #subscribe {
     min-width: 1215px;
   }
-  #testimonials{
+  #testimonials {
     min-width: 1215px;
   }
 }
@@ -743,7 +738,7 @@ footer {
   #subscribe {
     min-width: auto;
   }
-  #testimonials{
+  #testimonials {
     min-width: auto;
   }
 }
@@ -865,16 +860,19 @@ footer {
     margin-left: 30px;
   }
 
-  #projects {
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    margin: 0;
-  }
   #cards-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin: 0 50px 0 50px;
+    gap: 50px;
+  }
+  .cards {
     padding-bottom: 1.2rem;
     background-color: white;
+    max-width: 80%;
   }
   .cards img {
     width: 100%;
@@ -1021,6 +1019,10 @@ footer {
     color: #072ac8;
     margin: 0 27px 27px 27px;
   }
+  .service-class a:hover {
+    font-weight: bold;
+    color: #282e4b;
+  }
 
   /* PART6 subscribe */ /* ----------------------------------------------------------------------------- */
 
@@ -1057,7 +1059,8 @@ footer {
     font-weight: 400;
     font-size: 1.1rem;
     width: 100%;
-    background: url("../images/newsletter/icon/mail.svg") no-repeat scroll 7px 7px;
+    background: url("../images/newsletter/icon/mail.svg") no-repeat scroll 7px
+      7px;
     background-position: 3% 50%;
     background-color: white;
     padding-left: 50px;
