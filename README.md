@@ -130,7 +130,7 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 - [ ] Tarea no completada
 - [x] Tarea Completada
-- [ ] Ej - Crear archivo .js "section projects"
+- [x] Ej - Crear archivo .js "section projects"
 - [x] Ej - Crear archivo .js "section contac us"
 
 
@@ -157,26 +157,26 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 - [ ] Tarea no completada
 - [x] Tarea Completada
 - [x] Ej - esctructura de "index en figma / desktop"
-- [ ] Ej - Comenzar .css de index
+- [x] Ej - Comenzar .css de index
 
 #### Day Five
 
 ###### MARTES 30, Mayo 2023
 - [ ] Tarea no completada
 - [x] Tarea Completada
-- [ ] Ej - continuar con .css de index / projects
+- [x] Ej - continuar con .css de index / projects
 
 #### Day Five
 
 ###### MIERCOLES 31, Mayo 2023
 - [ ] Tarea no completada
 - [x] Tarea Completada
-- [ ] Ej - continuar con .css de projects / contact
+- [x] Ej - continuar con .css de projects / contact
 
 ###### JUEVES 1, Junio 2023
 - [ ] Tarea no completada
 - [x] Tarea Completada
-- [ ] Ej - continuar con .css de projects / contact
+- [x] Ej - continuar con .css de projects / contact
 - [ ] Ej - hacer presenrtacion 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -242,7 +242,7 @@ La sección "grande error" en un archivo README es una sección opcional que pro
 
 En esta sección se puede incluir información como:
 
-- Descripción detallada del error cometido.
+- 
 - Consecuencias del error.
 - Soluciones implementadas para corregir el error.
 - Lecciones aprendidas y recomendaciones para evitar errores similares en el futuro.

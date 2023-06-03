@@ -5,182 +5,234 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle Agency</title>
-    <link rel="stylesheet" href="./resources/styles/style.css">
+    <link rel="stylesheet" href="./resources/styles/style.css" />
   </head>
   <body>
-    <main>
-      <!-- section n0 nav-var y button de contac us -->
-      <nav class="nav-bar">
-        <div>
-          <object
-            data="./resources/images/logos/circle.svg"
-            type="image/svg+xml"
-          ></object>
-        </div>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">About</a></li>
-        </ul>
-        <button type="button">Contac us</button>
-      </nav>
-      <!-- section n1 Header -->
-      <header>
-        <div>
-          <h1>Empower Your Business With Stunning Design!</h1>
-          <p>
-            Circle is a digital design and development studio. We design and
-            develop astonishing websites and mobile apps.
-          </p>
-          <a href=""><span>See our work</span></a>
-          <button type="button">Get in touch</button>
-        </div>
-        <div class="blockOne">
-          <img
-            src="./resources/images/hero-section/hero-image.png"
-            alt="principalPerson"
-          />
-          <img src="./resources/images/hero-section/card-1.png" alt="TDC" />
-          <img
-            src="./resources/images/hero-section/card-2.png"
-            alt="thumbs up"
-          />
-        </div>
-      </header>
-      <!-- section n2 infinty scroll -->
+    <!-- section n0 nav-var y button de contac us -->
+    <nav class="nav-bar">
       <div>
         <object
-          data="./resources/images/logos/Adidas_Logo.svg"
-          type="image/svg+xml"
-        ></object>
-        <object
-          data="./resources/images/logos/airbnb-logo.svg"
-          type="image/svg+xml"
-        ></object>
-        <object
-          data="./resources/images/logos/google-logo.svg"
-          type="image/svg+xml"
-        ></object>
-        <object
-          data="./resources/images/logos/microsoft-logo.svg"
-          type="image/svg+xml"
-        ></object>
-        <object
-          data="./resources/images/logos/fedex-logo.svg"
-          type="image/svg+xml"
-        ></object>
-        <object
-          data="./resources/images/logos/amazon-logo.svg"
-          type="image/svg+xml"
-        ></object>
-        <object
-          data="./resources/images/logos/Logo_NIKE.svg"
+          class="logoContainer"
+          data="./resources/images/logos/circle.svg"
           type="image/svg+xml"
         ></object>
       </div>
-      <!-- section n3 Recent Proyects -->
-      <section>
-        <h2>Recent Projects</h2>
-        <div id="cardContainerProjects">
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-            <a href=""></a>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+      <a href="contact-us.html"
+        ><button class="contact-button">Contact us</button></a
+      >
+    </nav>
+    <!-- section n1 Header -->
+    <main>
+      <section class="header-container">
+        <div class="text-head">
+          <h1>Empower Your Business With Stunning Design!</h1>
+          <p class="slogan-container">
+            Circle is a digital design and development studio. <br />
+            We design and develop astonishing <br />
+            websites and mobile apps.
+          </p>
+          <div id="button-get-container">
+            <a id="see-our-work" href="#"><span>See our work</span></a>
+            <button class="button-get-in-touch" type="button">
+              Get in touch
+            </button>
           </div>
         </div>
+        <div class="block-one">
+          <img
+            id="principal-img"
+            src="./resources/images/hero-section/hero-image.png"
+            alt="principalPerson"
+          />
+          <img
+            id="card-image"
+            src="./resources/images/hero-section/card-1.png"
+            alt="TDC"
+          />
+          <img
+            id="img-thumb"
+            src="./resources/images/hero-section/card-2.png"
+            alt="thumb up"
+          />
+        </div>
+      </section>
+      <!-- section n2 Partners -->
+      <section id="partner-img">
+        <div class="partner-container">
+          <img
+            src="./resources/images/logos/Adidas_Logo.svg"
+            alt="adidas"
+            id="adidas"
+            class="marcas"
+          />
+          <img
+            class="marcas"
+            src="./resources/images/logos/Logo_NIKE.svg"
+            alt="nike"
+          />
+          <img
+            class="marcas"
+            src="./resources/images/logos/airbnb-logo.svg"
+            alt="airbnb"
+          />
+          <img
+            class="marcas"
+            src="./resources/images/logos/google-logo.svg"
+            alt="google"
+          />
+          <img
+            class="marcas"
+            src="./resources/images/logos/microsoft-logo.svg"
+            alt="microsoft"
+          />
+          <img
+            class="marcas"
+            src="./resources/images/logos/fedex-logo.svg"
+            alt="fedex"
+          />
+          <img
+            class="marcas"
+            src="./resources/images/logos/amazon-logo.svg"
+            alt="amazon"
+          />
+        </div>
+      </section>
+      <!-- section n3 Recent Proyects -->
+      <section id="projects">
+        <h2 class="title-h2">Recent Projects</h2>
+        <div id="cards-container"></div>
       </section>
       <!-- section n4 Testimonial board -->
-      <div>
-        <h2>Hear What Our Clients Have to Say</h2>
+      <section id="testimonials">
+        <h2 id="title-testimonials">Hear What Our Clients Have to Say</h2>
         <p>
-          "Circle helped us through every stage of our startup. We really
-          enjoyed working with you."
+          "Circle helped us through every stage of our startup. <br />
+          We really enjoyed working with you."
         </p>
+        <div class="profile-testimonial">
+          <img
+            src="./resources/images/testimonial-section/profile.png"
+            alt="kristin profile picture"
+          />
+          <div>
+            <h4>Kristin Watson</h4>
+            <h5>Booking.com</h5>
+          </div>
+        </div>
         <img
+          class="emoji-girl"
           src="./resources/images/testimonial-section/memoji-1.png"
           alt="emoji gilr"
         />
         <img
+          class="emoji-man"
           src="./resources/images/testimonial-section/memoji-2.png"
           alt="emoji man"
         />
         <img
+          class="emoji-boy"
           src="./resources/images/testimonial-section/memoji-3.png"
           alt="emoji boy"
         />
         <img
+          class="emoji-woman"
           src="./resources/images/testimonial-section/memoji-4.png"
           alt="emoji woman"
         />
-      </div>
+      </section>
       <!-- section n5 Our Services -->
-      <section>
-        <h2>Our Services</h2>
-        <div>
-          <object
-            data="./resources/images/services-section/icons/1.svg"
-            type="image/svg+xml"
-          ></object>
-          <h3>User Interface Design</h3>
-          <p>
-            Circle provides you with a stunning user interface design that is
-            accessible to everyone.
-          </p>
-          <a href="">Learn More</a>
-        </div>
-        <div>
-          <object
-            data="./resources/images/services-section/icons/2.svg"
-            type="image/svg+xml"
-          ></object>
-          <h3>User Experience Design</h3>
-          <p>
-            Circle always focuses on delivering the best user experience to your
-            customers.
-          </p>
-          <a href="">Learn More</a>
-        </div>
-        <div>
-          <object
-            data="./resources/images/services-section/icons/3.svg"
-            type="image/svg+xml"
-          ></object>
-          <h3>Application Development</h3>
-          <p>
-            We develop high-quality mobile and web applications using the latest
-            technology stack.
-          </p>
-          <a href="">Learn More</a>
+      <section id="services">
+        <h2 class="title-h2">Our Services</h2>
+        <div class="services-container">
+          <div class="services-card">
+            <div id="services-card1"></div>
+            <!-- <object
+              data="./resources/images/services-section/icons/1.svg"
+              type="image/svg+xml"
+            ></object> -->
+            <h3>User Interface Design</h3>
+            <p>
+              Circle provides you with a stunning user interface design that is
+              accessible to everyone.
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div class="services-card">
+            <div id="services-card2"></div>
+            <!-- <object
+              data="./resources/images/services-section/icons/2.svg"
+              type="image/svg+xml"
+            ></object> -->
+            <h3>User Experience Design</h3>
+            <p>
+              Circle always focuses on delivering the best user experience to
+              your customers.
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div class="services-card">
+            <div id="services-card3"></div>
+            <!-- <object
+                data="./resources/images/services-section/icons/3.svg"
+                type="image/svg+xml"
+              ></object> -->
+            <h3>Application Development</h3>
+            <p>
+              We develop high-quality mobile and web applications using the
+              latest technology stack.
+            </p>
+            <a href="">Learn More</a>
+          </div>
         </div>
       </section>
-      <!-- section n6 Newsletter  -->
-      <div>
+      <!-- section n6 subscribe   -->
+      <section id="subscribe">
         <h2>Do you have any questions?</h2>
-        <span>Let us help you!</span>
-        <form action="/ruta-de-procesamiento" method="post">
-          <input type="email" name="email" placeholder="Enter your email" />
-          <button type="submit">Subcribe</button>
+        <p>Let us help you!</p>
+        <form class="email" action="/ruta-de-procesamiento" method="post">
+          <input
+            id="input-email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <button id="button-subscribe" type="submit">Subcribe</button>
         </form>
-      </div>
-      <!-- section n7 footer -->
-      <footer>
-        <object
-          data="./resources/images/logos/circle.svg"
-          type="image/svg+xml"
-        ></object>
-        <p>Barcelona. Spain, 08029</p>
-        <ul>
-          <li><a href=""></a>Team</li>
-          <li><a href=""></a>Services</li>
-          <li><a href=""></a>About Us</li>
-          <li><a href=""></a>Press</li>
-          <li><a href=""></a>Proyects</li>
-          <li><a href=""></a>Privacy policy</li>
-        </ul>
-      </footer>
+      </section>
     </main>
+    <!-- section n7 footer -->
+    <footer>
+      <div class="logo-address">
+        <div class="footer-logo-address">
+          <img
+            class="logo-footer"
+            src="./resources/images/logos/circle.svg"
+            alt="circle-logo"
+          />
+        </div>
+        <div id="direction">
+          <p>Barcelona. Spain, 08029. 2023</p>
+        </div>
+      </div>
+      <div class="links-footer">
+        <a href="">Team</a>
+        <a href="">Services</a>
+        <a href="">About Us</a>
+        <a href="">Press</a>
+        <a href="">Proyects</a>
+        <a href="">Privacy policy</a>
+      </div>
+    </footer>
     <script src="resources/js/index.js"></script>
   </body>
 </html>
