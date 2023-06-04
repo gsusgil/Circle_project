@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 section,
 footer {
@@ -42,22 +43,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    /* text-align: center; */
     max-width: 1063px;
     margin: auto;
   }
 }
-/* main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  text-align: center;
-  max-width: 1063px;
-  margin: auto;
-} */
-
 .title-h2 {
   margin: 100px 0 75px 0;
   font-size: 2.5rem;
@@ -87,6 +76,7 @@ body {
   align-items: center;
   margin: 75px auto;
 }
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -119,6 +109,11 @@ body {
   font-weight: bold;
   font-size: 1.05rem;
   padding: 16px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #292e47;
 }
 
 .menu-button-container {
@@ -219,6 +214,11 @@ body {
   font-weight: bold;
   font-size: 1.05rem;
   padding: 16px;
+  cursor: pointer;
+}
+
+.button-get-in-touch:hover {
+  background-color: #292e47;
 }
 
 .block-one {
@@ -249,14 +249,6 @@ body {
 }
 
 /* ------------------------------ Partners ------------------------------ */
-/* #partner-img {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-} */
 
 #partner-img {
   display: flex;
@@ -282,6 +274,9 @@ body {
 }
 .partner-container img {
   margin-right: 30px;
+}
+.partner-container img:hover {
+  filter: grayscale(100%);
 }
 .partner-container img:last-child {
   margin-right: 0;
@@ -336,27 +331,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
-  margin-top: 150px;
+  margin: 150px 0px 0px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   position: relative;
-
-  /* background-color: #292e47;
-  background-image: url("../images/testimonial-section/orbit.png");
-  height: 500px;
-  margin-top: 150px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  max-width: 1215px;
-  align-items: center;
-  position: relative;
-  margin-top: rem; */
 }
 .profile-testimonial {
   display: flex;
@@ -519,12 +500,12 @@ body {
   font-weight: bold;
   color: #282e4b;
 }
+
 /* ------------------------------ Questions form ------------------------------ */
 #subscribe {
   height: 400px;
   background-color: #ffc600;
-  margin-top: 150px;
-  /* min-width: 1215px; */
+  margin: 150px 0px 0px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -570,8 +551,11 @@ input {
   text-decoration: none;
   margin-left: 12px;
   border: none;
+  cursor: pointer;
 }
-
+#button-subscribe:hover {
+  background-color: #292e47;
+}
 /* ------------------------------ Footer ------------------------------ */
 footer {
   display: flex;
@@ -659,7 +643,8 @@ footer {
   font-size: 3rem;
 }
 
-#form-container {
+.contact-us {
+  padding: 0 14px 0 14px;
 }
 
 #form-container form {
@@ -745,12 +730,13 @@ footer {
 
 @media (max-width: 990px) {
   .nav-bar {
-    margin: 0 auto 50px auto;
     padding: 0 30px 15px 30px;
+    margin: 0 auto 80px auto;
+    gap: 250px;
     height: 80px;
     width: 80%;
   }
-  .nav-bar a:last-child {
+  .contact-button:last-child {
     display: none;
   }
 }
@@ -758,8 +744,12 @@ footer {
 @media (max-width: 766px) {
   /* PART1 header content incluide h1/slongan text / principal img & buttons */
 
-  .contact-button {
+  /* .contact-button {
     display: none;
+  } */
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
   }
 
   .header-container {
@@ -780,15 +770,7 @@ footer {
   .text-head p {
     text-align: center;
   }
-  /* .slogan-container {
-    font-size: 1rem;
-    text-align: center;
-    padding-top: 2rem;
-    color: #6b708d;
-    margin-left: 2rem;
-    margin-right: 1rem;
-    line-height: 1.9rem;
-  } */
+
   #button-get-container {
     display: flex;
     justify-content: center;

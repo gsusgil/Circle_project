@@ -18,7 +18,7 @@ fetch(url)
     createCards(cardsInfo);
   })
   .catch((error) => console.error(error));
-function createCards(cardsInfo) {
+const createCards = (cardsInfo)=> {
   // Obtén el contenedor padre
   const parentContainer = document.getElementById("cards-container");
   // Crea los tres elementos div
@@ -45,7 +45,7 @@ function createCards(cardsInfo) {
   }
 }
 // Función para minimizar el texto a un número específico de caracteres
-function maxText(text, limit) {
+const maxText =(text, limit)=> {
   if (text.length <= limit) {
     return text;
   } else {
