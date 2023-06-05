@@ -7,6 +7,7 @@
   --primary: #d1edff;
   --primary: #6b708d;
   --primary: #292e47;
+  --primary: #ffc600 ;
 }
 
 * {
@@ -66,7 +67,46 @@ body {
 
 /* ------ CIRCULAR ANIMATION ------ */
 
-/* Your CSS code goes here */
+
+*, *:after, *::before{
+  margin: 0;
+  padding: 0 ;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#load-container {
+    background-color: rgba(244, 246, 252, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  
+  #loader {
+    border: 5px solid #ccc;
+    border-top-color: #ffc600;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    -webkit-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+  }
+  
+
+@keyframes spin {
+  from{ transform: rotate(0deg);}
+  to{ transform: rotate(360deg);}
+  
+}
+
 
 /* ------------------------------ Navbar ------------------------------ */
 .nav-bar {
@@ -205,6 +245,11 @@ body {
   font-size: 1.05rem;
   margin: 0 14px 0 14px;
 }
+
+#see-our-work:hover {
+  color: #072ac8;
+}
+
 .button-get-in-touch {
   text-decoration: none;
   background-color: #072ac8;
@@ -321,6 +366,9 @@ body {
   color: #072ac8;
   margin: 0 27px 27px 27px;
   cursor: pointer;
+}
+.cards a:hover {
+  color: #282e4b;
 }
 
 /* ------------------------------ Client reviews ------------------------------ */
@@ -496,7 +544,7 @@ body {
   margin: 0 27px 27px 27px;
 }
 
-.service-class a:hover {
+.services-card a:hover {
   font-weight: bold;
   color: #282e4b;
 }
@@ -642,16 +690,10 @@ footer {
   color: #292e47;
   font-size: 3rem;
 }
-
-.contact-us {
-  padding: 0 14px 0 14px;
-}
-
 #form-container form {
   display: flex;
   flex-direction: column;
 }
-
 #form-container form label {
   font-size: 1.2rem;
   font-weight: 400;
@@ -659,7 +701,6 @@ footer {
   margin-bottom: 10px;
   width: 100%;
 }
-
 #form-container form input {
   border: 0;
   background-color: rgba(107, 112, 141, 0.1);
@@ -668,26 +709,33 @@ footer {
   font-size: 1.1rem;
   padding-left: 15px;
   margin-bottom: 24px;
-  width: 500px;
+  width: 100%;
 }
-
+.contact-us h1 {
+  font-size: 4rem;
+  color: #292e47;
+  padding-bottom: 70px;
+}
+.email-phone {
+  display: flex;
+  gap: 10px;
+}
 .email-phone div {
   width: 49.5%;
   display: flex;
   flex-direction: column;
 }
-
-.message #msg {
+#msg {
   border: 0;
   background-color: rgba(107, 112, 141, 0.1);
   height: 200px;
+  width: 100%;
   font-weight: 400;
   font-size: 1.1rem;
-  padding-top: 7px;
+  padding-top: 0px;
   padding-left: 15px;
   margin-bottom: 24px;
 }
-
 .submit {
   background-color: #072ac8;
   color: white;
@@ -696,6 +744,11 @@ footer {
   padding: 25px;
   text-decoration: none;
   border: none;
+  width: 100%;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #6c718b;
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -799,6 +852,9 @@ footer {
     color: #61667f;
     text-decoration: none;
   }
+  #see-our-work:hover {
+    color: #072ac8;
+  }
 
   .block-one {
     width: 100%;
@@ -875,6 +931,9 @@ footer {
     font-weight: 500;
     color: #072ac8;
   }
+  .cards a:hover {
+    color: #292e47;
+  }
 
   /* PART4 testimonials */ /* ----------------------------------------------------------------------------- */
 
@@ -939,7 +998,6 @@ footer {
   #services {
     width: 80vw;
   }
-
   .services-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -995,17 +1053,6 @@ footer {
     margin: 0 27px 27px 27px;
   }
 
-  .services-card a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #072ac8;
-    margin: 0 27px 27px 27px;
-  }
-  .service-class a:hover {
-    font-weight: bold;
-    color: #282e4b;
-  }
-
   /* PART6 subscribe */ /* ----------------------------------------------------------------------------- */
 
   #subscribe {
@@ -1057,7 +1104,6 @@ footer {
     text-decoration: none;
     margin: 0;
     border: none;
-    cursor: pointer;
   }
   #button-subscribe:hover {
     background-color: #292e47;
@@ -1150,8 +1196,55 @@ footer {
 
 /* ------------------------------ Alert ------------------------------ */
 
-/* Your CSS code goes here */
-
+#success-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #71C67D;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
 /* ------------------------------ Sticky scroll bar ------------------------------ */
 
 /* Your CSS code goes here */
+
+/* ------------------------------ CONTACT US MEDIA QUERY ------------------------------ */
+
+@media (max-width: 766px) {
+  .contact-us {
+    padding: 0 14px 0 14px;
+  }
+  .contact-us h1 {
+    font-size: 2rem;
+    color: #292e47;
+  }
+  .email-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .email-phone div {
+    width: 100%;
+  }
+}
+/* ------------------------------ CONTACT US MEDIA QUERY ------------------------------ */
+
+@media (max-width: 766px) {
+  .title-h2 {
+    margin-left: 30px;
+  }
+  .subtitle {
+    margin: 0px 30px 0px 30px;
+  }
+  .img-project {
+    margin: 0px 45px 0px 45px;
+  }
+  .text-project {
+    margin: 0px 45px 0px 45px;
+    text-align: justify left;
+  }
+}

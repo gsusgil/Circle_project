@@ -10,6 +10,12 @@
 </head>
 
 <body>
+  <!-- loader -->
+  <div id="load-container">
+    <div id="loader"></div>
+  </div>
+  <!-- success message -->
+  <div id="success-message"></div>
   <!-- Section Nav-Bar -->
   <nav class="nav-bar">
     <div>
@@ -32,57 +38,66 @@
     <a href="contact-us.html"
       ><button class="contact-button">Contact us</button></a
     >
-  </nav>
-  <body>
+  </nav> 
+<!-- <main> -->
+  <section class="contact-us">
+    <!-- section n1 Form -->
+    <h1>Contact Us</h1>
+    <div id="form-container">
+      <form id="form-msg" action>
+      
+        <label for="formName">Full name *</label>
+        <input type="text" id="formName" name="formName" placeholder="Enter your full name" />
+                
+      <div class="email-phone">
+        <div class="email-form">
+          <label for="email">Email</label>
+          <input type="email" id="email-us" name="email" placeholder="Enter your email" />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+            placeholder="Enter your phone" />
+        </div>
+      </div>
+      <label for="msg">Message *</label>
+      <textarea id="msg" name="message" rows="10" cols="30"
+        placeholder="Write your message here..."></textarea>
+      <p id="errorBox"></p>
+      <button class="submit" type="submit">Submit</button>
     
-      <section class="contact-us">
-        <!-- section n1 Form -->
-        <h1>Contact Us</h1>
-
-        <div id="form-container">
-          <form id="form-msg" action>
-          <div id="name">
-            <label for="formName">Full name *</label><br />
-            <input type="text" id="formName" name="formName" placeholder="Enter your full name" />
-          </div>
-          
-          <div class="email-phone">
-            <div class="email-form">
-              <label for="email">Email</label>
-              <input type="email" id="email-us" name="email" placeholder="Enter your email" />
-            </div>
-            <div>
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
-                placeholder="Enter your phone" />
-            </div>
-          </div>
-
-          <div class="message">
-          <label for="msg">Message *</label><br />
-          <textarea id="msg" name="message" rows="10" cols="30"
-            placeholder="Write your message here..."></textarea><br />
-          <p id="errorBox"></p>
-          <button class="submit" type="submit">Submit</button>
-        </div>
-        </form>
-        </div>
-        </section>
+      </form>
+      </div>
+      <div class="container"></div>
+  </section>
+<!-- </main> -->
     
     <!-- section n2 footer -->
     <footer>
-      <object data="./resources/images/logos/circle.svg" type="image/svg+xml"></object>
-      <p>Barcelona. Spain, 08029</p>
-      <ul>
-        <li><a href=""></a>Team</li>
-        <li><a href=""></a>Services</li>
-        <li><a href=""></a>About Us</li>
-        <li><a href=""></a>Press</li>
-        <li><a href=""></a>Proyects</li>
-        <li><a href=""></a>Privacy policy</li>
-      </ul>
-    </footer>
+      <footer>
+        <div class="logo-address">
+          <div class="footer-logo-address">
+            <img
+              class="logo-footer"
+              src="./resources/images/logos/circle.svg"
+              alt="circle-logo"
+            />
+          </div>
+          <div id="direction">
+            <p>Barcelona. Spain, 08029. 2023</p>
+          </div>
+        </div>
+        <div class="links-footer">
+          <a href="">Team</a>
+          <a href="">Services</a>
+          <a href="">About Us</a>
+          <a href="">Press</a>
+          <a href="">Proyects</a>
+          <a href="">Privacy policy</a>
+        </div>
+      </footer>
   </body>
   <script src="./resources/js/contact.js"></script>
+  <script src="resources/js/loader.js"></script>
 
 </html>
