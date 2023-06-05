@@ -37,7 +37,7 @@ const createCards = (cardsInfo)=> {
     divElement.appendChild(paragraphElement);
     const linkElement = document.createElement("a");
     linkElement.href = linkForIndex(i);
-    linkElement.target = "_blank";
+    linkElement.target = "_self";
     linkElement.textContent = "Learn More";
     divElement.appendChild(linkElement);
     // Agrega cada div al contenedor padre

@@ -90,7 +90,7 @@ body {
   }
   
   #loader {
-    border: 5px solid #ccc;
+    border: 3px solid rgba(244, 246, 252, 0);
     border-top-color: #ffc600;
     width: 500px;
     height: 500px;

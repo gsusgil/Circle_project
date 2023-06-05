@@ -39,7 +39,7 @@ const createCards = (cardsInfo) => {
     divElement.appendChild(paragraphElement);
     const linkElement = document.createElement("a");
     linkElement.href = "#";
-    linkElement.target = "_blank";
+    linkElement.target = "_self";
     linkElement.textContent = "Learn More";
     linkElement.dataset.id = cardsInfo[i].id;
     divElement.appendChild(linkElement);
