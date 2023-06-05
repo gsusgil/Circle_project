@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Circle Agency</title>
+    <title>Circle Agency JesusGil</title>
     <link rel="stylesheet" href="./resources/styles/style.css" />
   </head>
   <body>
-
-   <!-- loader -->
+    <!-- loader -->
     <div id="load-container">
       <div id="loader"></div>
     </div>
- <!-- section n0 nav-var y button de contac us -->
+    <!-- section n0 nav-var y button de contac us -->
     <nav class="nav-bar">
       <div>
         <object
@@ -48,9 +47,11 @@
           </p>
           <div id="button-get-container">
             <a id="see-our-work" href="#projects"><span>See our work</span></a>
-            <a href="./contact-us.html"> <button class="button-get-in-touch" type="button">
-              Get in touch
-            </button></a>
+            <a href="./contact-us.html">
+              <button class="button-get-in-touch" type="button">
+                Get in touch
+              </button></a
+            >
           </div>
         </div>
         <div class="block-one">
@@ -211,7 +212,11 @@
             name="email"
             placeholder="Enter your email"
           />
-          <button id="button-subscribe" type="submit">Subcribe</button>
+          <a href="#subscribe">
+            <button id="button-subscribe" type="button">Subscribe</button>
+          </a>
+          <!-- success message -->
+          <div id="success-msg"></div>
         </form>
       </section>
     </main>
@@ -240,5 +245,6 @@
     </footer>
     <script src="resources/js/index.js"></script>
     <script src="resources/js/loader.js"></script>
+    <script src="resources/js/subscribe.js"></script>
   </body>
 </html>
