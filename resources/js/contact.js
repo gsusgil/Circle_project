@@ -1,7 +1,8 @@
 /* Crea tu propia lógica para hacer un fetch que emule una post request a un servidor y enseñe un mensaje en consola cuando la llamada se resuelva */
 /*  ADVANCED: utiliza DOM manipulation para enseñarle al user que su mensaje se ha enviado correctamente o no */
 
-// 1era ITERACION  Primero se crean todas las variables con los sselectores correctos ya identificados en el html
+// 1era ITERACION  Primero se crean todas las variables con los selectores correctos ya identificados en el html
+
 const url = "https://jsonplaceholder.typicode.com/posts";
 const myForm = document.querySelector("#form-msg");
 const nameInput = document.querySelector("#formName");
@@ -18,6 +19,7 @@ let sendData = async (event) => {
   event.preventDefault();
 
   // 2da ITERACION  Se coloca un IF para verificar que todos los campos esten rellenos correctamente, caso contrario avisa a user que tiene que verificar y rellenar todo correctamente
+
   if (!nameInput.value || !emailInput.value || !phoneNumber.value) {
     alert("Por favor, completa todos los campos.");
     return;

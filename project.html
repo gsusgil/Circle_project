@@ -1,113 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Page-Simple</title>
+    <link rel="stylesheet" href="resources/styles/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Page-Simple</title>
-  <link rel="stylesheet" href="resources/styles/style.css" />
-</head>
-
-<body>
-<!-- loader -->
-<div id="load-container">
-  <div id="loader"></div>
-</div>
-  <!-- Section Nav-Bar -->
-  <nav class="nav-bar">
-    <div>
-      <object
-        class="logoContainer"
-        data="./resources/images/logos/circle.svg"
-        type="image/svg+xml"
-      ></object>
+  <body>
+    <!-- loader -->
+    <div id="load-container">
+      <div id="loader"></div>
     </div>
-    <input id="menu-toggle" type="checkbox" />
-    <label class="menu-button-container" for="menu-toggle">
-      <div class="menu-button"></div>
-    </label>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-    <a href="contact-us.html"
-      ><button class="contact-button">Contact us</button></a
-    >
-  </nav>
-  <main>
-    <section class="principal-project">
-      <div class="title-h2">
-        <h1>Simplifyy</h1>
-      </div>
-      <div class="subtitle">
-        <h3>UI Design & App Development</h3>
-        <p>Completed on 2/2/22</p>
-      </div>
-      <div class="img-project">
-        <img src="./resources/images/projects-section/4.jpg" alt="project">
-      </div>
-      <div class="text-project">
-        <p>Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate
-          justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros
-          pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla
-          ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue
-          lacus. <br>Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce et sem ac velit placerat ultrices in id
-          dolor. Sed eget auctor metus. Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et pellentesque
-          nisl, vitae tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi tincidunt, sit amet
-          tincidunt urna convallis. Nam et sagittis felis. Pellentesque placerat orci sodales nisi convallis ultrices.
-          Nunc posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim
-          pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin vehicula sit amet vel mi.</p>
-      </div>
-    </section>
 
-    <section id="projects">
-      <h2 class="title-h2">Recent Projects</h2>
-      <div id="cards-container"></div>
-    </section>
-    
-    <section id="subscribe">
-      <h2>Do you have any questions?</h2>
-      <p>Let us help you!</p>
-      <form class="email" action="/ruta-de-procesamiento" method="post">
-        <input
-          id="input-email"
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-        />
-        <button id="button-subscribe" type="submit">Subcribe</button>
-      </form>
-    </section>
-  </main>
+    <!-- Section Nav-Bar -->
 
-  <footer>
-    <div class="logo-address">
-      <div class="footer-logo-address">
-        <img
-          class="logo-footer"
-          src="./resources/images/logos/circle.svg"
-          alt="circle-logo"
-        />
+    <nav class="nav-bar">
+      <div>
+        <object
+          class="logoContainer"
+          data="./resources/images/logos/circle.svg"
+          type="image/svg+xml"
+        ></object>
       </div>
-      <div id="direction">
-        <p>Barcelona. Spain, 08029. 2023</p>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <a href="contact-us.html"
+        ><button class="contact-button">Contact us</button></a
+      >
+    </nav>
+
+    <main>
+      <!-- Principal project -->
+
+      <section class="principal-project">
+        <div class="title-h2"></div>
+
+        <div id="current-project"></div>
+      </section>
+
+      <!-- Card project -->
+
+      <section id="projects">
+        <h2 class="title-h2">Recent Projects</h2>
+        <div id="cards-container"></div>
+      </section>
+
+      <!-- Subscribe -->
+
+      <section id="subscribe">
+        <h2>Do you have any questions?</h2>
+        <p>Let us help you!</p>
+        <form class="email" action="/ruta-de-procesamiento" method="post">
+          <input
+            id="input-email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <button id="button-subscribe" type="submit">Subcribe</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="logo-address">
+        <div class="footer-logo-address">
+          <img
+            class="logo-footer"
+            src="./resources/images/logos/circle.svg"
+            alt="circle-logo"
+          />
+        </div>
+        <div id="direction">
+          <p>Barcelona. Spain, 08029. 2023</p>
+        </div>
       </div>
-    </div>
-    <div class="links-footer">
-      <a href="">Team</a>
-      <a href="">Services</a>
-      <a href="">About Us</a>
-      <a href="">Press</a>
-      <a href="">Proyects</a>
-      <a href="">Privacy policy</a>
-    </div>
-  </footer>
-
-</body>
-<script src="./resources/js/project.js"></script>
-<script src="resources/js/loader.js"></script>
-
+      <div class="links-footer">
+        <a href="">Team</a>
+        <a href="">Services</a>
+        <a href="">About Us</a>
+        <a href="">Press</a>
+        <a href="">Proyects</a>
+        <a href="">Privacy policy</a>
+      </div>
+    </footer>
+  </body>
+  <script src="./resources/js/project.js"></script>
+  <script src="resources/js/loader.js"></script>
 </html>
