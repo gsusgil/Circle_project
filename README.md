@@ -103,81 +103,128 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 - [ ] Ej - Tarea a completar y mover a su respectivo dia de ejecucion
 
 #### Day One
+###### Martes 23, Mayo 2023
 
-#### Day One
-
-###### MIERCOLES 24, Mayo 2023
-
-- [ ] Tarea no completada
-- [x] Tarea Completada
-- [x] Seccionar la pagina web 
-- [x] Crear section "index" en html
-- [x] Crear section "projects" en html
-- [x] Crear section "contac us" en html
+- [x] Crear index.html
+      - [x] nav
+      - [x] header
+      - [x] section brands
+      - [x] section recent projects
+      - [x] section our services
+      - [x] section clients
+      - [x] question
+      - [x] footer
 
 #### Day Two
 
-###### JUEVES 25, Mayo 2023
+###### Miercoles 24, Mayo 2023
 
-- [ ] Tarea no completada
-- [x] Tarea Completada
-- [x] Ej - Crear archivo .js "section index"
+- [x] Crear project.html
+      - [x] nav
+      - [x] header
+      - [x] section main
+      - [x] section other projects
+      - [x] section question
+      - [x] footer
 
+- [x] Crear contact-us.html
+      - [x] nav
+      - [x] crear formularios
+      - [x] footer
 
 #### Day Three
 
-###### VIERNES 26, Mayo 2023
-
-- [ ] Tarea no completada
+###### JUEVES 26, Mayo 2023
 - [x] Tarea Completada
-- [x] Ej - Crear archivo .js "section projects"
+- [x] Ej - Crear archivo .js "index"
 - [x] Ej - Crear archivo .js "section contac us"
 
-
 #### Day Four
+###### Sabado 27, Mayo 2023
+- [x] Ej - Crear archivo .js "index" (continuacion)
+- [x] Ej - Crear archivo .js "section contac us" (continuacio)
+
+
+#### Day Five
 
 ###### SABADO 27, Mayo 2023
-
-- [ ] Tarea no completada
 - [x] Tarea Completada
 - [x] Ej - terminar .js de "contac us"
+- [x] crear project.js
 
+#### Day Six
 
-
-#### Day Five
-
-###### DOMINGO 28, Mayo 2023
-- [ ] Tarea no completada
+###### DOMINGO 28, Mayo 202
 - [x] Tarea Completada
-- [x] Ej - esctructura de "index en figma / mobile"
 
-#### Day Five
+#### Day Seven
+###### Lunes 29, Mayo 2023
 
-###### LUINES 29, Mayo 2023
-- [ ] Tarea no completada
-- [x] Tarea Completada
-- [x] Ej - esctructura de "index en figma / desktop"
-- [x] Ej - Comenzar .css de index
+- [x] Crear style.css
+      - [x] Style index.html
+            - [x] nav
+            - [x] header
 
-#### Day Five
+#### Day Eigth
 
 ###### MARTES 30, Mayo 2023
-- [ ] Tarea no completada
-- [x] Tarea Completada
-- [x] Ej - continuar con .css de index / projects
+- [x] Crear style.css
+      - [x] Style index.html
+            - [x] section brands
+            - [x] section recent projects
 
-#### Day Five
+#### Day Nine
+###### Miercoles 31, Mayo 2023
 
-###### MIERCOLES 31, Mayo 2023
-- [ ] Tarea no completada
-- [x] Tarea Completada
-- [x] Ej - continuar con .css de projects / contact
+- [x] Crear style.css
+      - [x] Style index.html
+            - [x] section our services
 
-###### JUEVES 1, Junio 2023
-- [ ] Tarea no completada
-- [x] Tarea Completada
-- [x] Ej - continuar con .css de projects / contact
-- [ ] Ej - hacer presenrtacion 
+#### Day Ten
+###### Jueves 1, Junio 2023
+
+- [x] Modificar style.css
+      - [x] Style index.html
+            - [x] section clients
+            - [x] section questions
+            - [x] footer
+
+#### Day Eleven
+###### Viernes 2, Junio 2023
+
+- [x] Modificar style.css
+      - [] Style project.html
+            - [x] nav
+            - [x] header
+            - [x] section main
+
+ #### Day Twelve
+###### Sabado 3, Junio 2023
+
+- [x] Modificar style.css
+      - [x] Style project.html
+            - [x] section other projects
+
+#### Day thirteen
+###### Domingo 4, Junio 2023
+
+- [x] Modificar style.css
+      - [x] Style project.html
+            - [x] section question
+- [x] actializacion de index.js
+      
+
+
+#### Day Fourteen
+###### Lunes 5, Junio 2023
+
+- [x] Modificar style.css
+      - [x] Style project.html
+            - [x] footer
+- [x] Crear loader.js 
+- [x] actializacion de project.js
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,22 +232,13 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 ## Acerca
 
-La sección "sobre mí" en un archivo README es una sección que proporciona información sobre el desarrollador o equipo detrás del proyecto.
+Jesus David Gil soy diseñador gráfico publicitario, con experiencia en diseño UX/UI. Mis ganas de seguir creciendo profesionalmente me han llevado a investigar y estudiar diferentes areas que se relacionan al desarrollo web siendo este la siguiente meta a alcanzar
 
-En esta sección se puede incluir información como:
+Email - [gsusgilgrfico@gmail.com]
 
-- Nombre y datos de contacto del desarrollador o equipo.
-- Información sobre experiencia laboral o académica relacionada con el proyecto.
-- Enlaces a perfiles en redes sociales o sitios web personales.
-- Otra información relevante que el desarrollador o equipo desee compartir.
+Project Link: [https://github.com/gsusgil/Circle_project.git]
 
-En resumen, la sección "sobre mí" es una excelente manera de brindar a los usuarios y contribuidores una idea de quién está detrás del proyecto y cómo pueden ponerse en contacto con ellos si tienen preguntas o comentarios. Es una buena manera de establecer una conexión con la comunidad de desarrolladores y una forma de mostrar la transparencia en el proyecto.
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/gsusgil/Circle_project.git](https://github.com/your_username/repo_name)
-
-Presentation Link: [Insert here your presentation link](insert-link-here)
+Presentation Link: [https://n9.cl/gesusgil-circle-project]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,14 +246,7 @@ Presentation Link: [Insert here your presentation link](insert-link-here)
 
 ## agradecimientos
 
-La sección "agradecimientos" en un archivo README es una sección que proporciona reconocimiento a las personas o instituciones que ayudaron en el desarrollo del proyecto.
-
-En esta sección se puede incluir información como:
-
-- Agradecimientos específicos a personas que ayudaron en el desarrollo del proyecto.
-- Agradecimientos a instituciones o organizaciones que proporcionaron apoyo financiero o recursos.
-- Enlaces a proyectos o recursos relacionados que fueron útiles para el desarrollo del proyecto.
-
+Para desarrollar este proyecto conté con la colaboración de mi compañero Armando Ayerbe, su compromiso y conocimiento fueron claves encarar el proyecto como un equipo. También quiero expresar mi agradecimiento a Diego Zito, un instructor excepcional en la academia IRONHACK. Su capacidad para impartir conocimientos y su actitud positiva han sido fundamentales en mi aprendizaje.
 
 
 - [Icon Libraries](insert-link-here)
@@ -225,26 +256,14 @@ En esta sección se puede incluir información como:
 
 ## Desafío Técnico
 
-La sección "desafío técnico" aunque no es convencional en un proyecto profesional, en nuestro curso dependemos de esta sección en un archivo README para proporcionar información sobre los desafíos técnicos que se enfrentaron durante el desarrollo del proyecto.
+- Empezar por el archivo HTML para estructurar la pagina y colocar cada id y class que necesitaría en las siguientes fases del proyecto.
 
-En esta sección se puede incluir información como:
+-El siguiente paso fue comenzar con los archivos JAVASCRIPT, a pesar de lo justo del tiempo, intenté investigar y cubrir la mayor cantidad de contenido para desarrollar el proyecto, sin embargo es fundamental resaltar que para lograr una lógica correcta es necesario investigar pero mas importante practicar.
 
-- Problemas técnicos específicos que se encontraron durante el desarrollo del proyecto.
-- Soluciones implementadas para superar estos desafíos.
-- Aspectos del proyecto que aún son un desafío o que requieren mejora continua.
-- Recomendaciones para futuros desarrolladores que trabajen en el proyecto.
-
-En resumen, la sección "desafío técnico" es una excelente manera de brindar a los usuarios y contribuidores una idea de los desafíos técnicos que se enfrentaron durante el desarrollo del proyecto, y cómo se abordaron. Esta sección también puede ser útil para futuros desarrolladores que trabajen en el proyecto, ya que les brinda información valiosa sobre problemas potenciales y soluciones para superarlos.
+-El desafío con CSS, fue la ultima de las fases del proyecto en realizar y comencé por el "principio de First Mobile", me llevo mas tiempo del que esperaba además investigué algunos temas que desconocía; como por ejemplo: Hamburger menu, Loader, etc.
 
 ## Grande Error
 
-La sección "grande error" en un archivo README es una sección opcional que proporciona información sobre los errores importantes cometidos durante el desarrollo del proyecto.
+- Considero que es importante mencionar la gestión del tiempo al momento de realizar proyectos de esta magnitud. Lleva horas de trabajo y es necesario planificar de manera correcta cuanto tiempo lleva aproximadamente cada actividad y los tiempos de break. 
 
-En esta sección se puede incluir información como:
-
-- 
-- Consecuencias del error.
-- Soluciones implementadas para corregir el error.
-- Lecciones aprendidas y recomendaciones para evitar errores similares en el futuro.
-
-En resumen, la sección "grande error" es una forma de ser transparente sobre los errores cometidos durante el desarrollo del proyecto. También puede ser útil para otros desarrolladores que trabajen en el proyecto, ya que les brinda información valiosa sobre problemas potenciales y cómo se abordaron.
+- En cuanto al trabajo en equipo, fue la mejor manera de llevar a cabo el proyecto. Sin embargo, es necesario organizarse desde el comienzo del mismo y realizar un brief para documentar los puntos importantes del proyecto, como por ejemplo: ID, CLASS, ESTILOS, COLORES, etc. La no realización de esto, conllevó a realizar cambios innecesarios en etiquetas y archivos, lo que resultó en pérdida de tiempo.
